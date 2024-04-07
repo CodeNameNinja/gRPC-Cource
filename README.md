@@ -20,3 +20,5 @@ yarn add -D  grpc-tools ts-node typescript
 > ```shell 
 > npm_config_target_arch=x64 yarn add -D  grpc-tools
 >```
+
+## Automating the gRPC Code Generation
