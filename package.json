@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pb:gen": "grpc_tools_node_protoc --js_out=import_style=commonjs,binary:./src --grpc_out=./src --plugin=protoc-gen-grpc=`which grpc_tools_node_protoc_plugin` ./protos/*.proto",
+    "pb:gen": "./scripts/gen.sh greet"
   },
   "keywords": [],
   "author": "",
