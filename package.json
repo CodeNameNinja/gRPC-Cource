@@ -8,5 +8,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.6",
+    "google-protobuf": "^3.21.2"
+  },
+  "devDependencies": {
+    "grpc-tools": "^1.12.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.4"
+  }
 }
