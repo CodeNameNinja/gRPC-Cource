@@ -22,3 +22,14 @@ yarn add -D  grpc-tools ts-node typescript
 >```
 
 ## Automating the gRPC Code Generation
+
+The following command will generate the gRPC code from the `greet` proto file
+```shell
+yarn pb:gen
+```
+
+## Making the proto file executable
+
+```shell
+chmod +x ./scripts/gen.sh
+```

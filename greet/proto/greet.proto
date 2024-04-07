@@ -5,5 +5,4 @@ package dummy;
 message Dummy {}
 
 service DummyService {
-  rpc Dummy(Dummy) returns (Dummy) {}
 }
