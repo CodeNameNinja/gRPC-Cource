@@ -17,6 +17,7 @@ for (( j = 0; j < argc; ++j )); do
 
   # Generate only Protobuf code for all the other .proto files (if any)
   # (eg: calculator/sum.proto)
+    # shellcheck disable=SC2046
   ./node_modules/.bin/grpc_tools_node_protoc -I ${argv[j]}/proto/                                   \
     --js_out=import_style=commonjs:${argv[j]}/proto/                            \
     $(find ${argv[j]}/proto/ -type f -name "*.proto" -not -path "${argv[j]}/proto/${argv[j]}.proto")
