@@ -1,4 +1,7 @@
 const grpc = require('@grpc/grpc-js')
+const serviceImpl = require('./service_impl')
+
+const { GreetServiceService } = require('../proto/greet_grpc_pb')
 
 const addr = "localhost:5051";
 
@@ -15,6 +18,8 @@ function main() {
         console.log('Server shutting down')
         cleanup(server)
     })
+
+    server.addService(GreetServiceService, serviceImpl)
 
     server.bindAsync(addr, grpc.ServerCredentials.createInsecure(), (error, _) => {
         if (error) {
